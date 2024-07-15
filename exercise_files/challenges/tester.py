@@ -16,7 +16,6 @@ class Tester:
 
     # Run the tests
     def execute(self):
-        allTestsPass = True
         for testInputAndExpectedResult in self.testInputsAndExpectedResults:
             # Arrange
             input, expectedResult = testInputAndExpectedResult
@@ -30,7 +29,6 @@ class Tester:
                 print('Pass!')
             else:
                 print(f'Fail with result: {result}')
-                allTestsPass = False
-
-        if allTestsPass:
+                break
+        else:
             print('Correct')
