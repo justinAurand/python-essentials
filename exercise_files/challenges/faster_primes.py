@@ -1,15 +1,15 @@
 from tester import Tester
 
 # Solution
-def allPrimesUpTo(num) -> list:
-    result = []
+def allPrimesUpTo(num: int) -> list:
+    primesFound = [2]
     for number in range(2, num):
-        for factor in range(2, int(number ** 0.5) + 1):
-            if number % factor == 0:
+        for primefactor in primesFound:
+            if number % primefactor == 0:
                 break
         else:
-            result.append(number)
-    return result
+            primesFound.append(number)
+    return primesFound
 
 # Place test cases here
 testInputsAndExpectedResults = [
