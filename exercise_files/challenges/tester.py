@@ -19,8 +19,7 @@ class Tester:
         allTestsPass = True
         for testInputAndExpectedResult in self.testInputsAndExpectedResults:
             # Arrange
-            input = testInputAndExpectedResult[0]
-            expectedResult = testInputAndExpectedResult[1]
+            input, expectedResult = testInputAndExpectedResult
 
             # Act
             print(f'Testing case "{input}"')
@@ -32,6 +31,6 @@ class Tester:
             else:
                 print(f'Fail with result: {result}')
                 allTestsPass = False
-        
+
         if allTestsPass:
             print('Correct')
