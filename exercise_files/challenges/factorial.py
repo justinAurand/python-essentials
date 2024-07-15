@@ -6,8 +6,6 @@ def factorial(num):
         return None
     if num < 0:
         return None
-    if num == 0:
-        return 1
 
     value = 1
     number = num
