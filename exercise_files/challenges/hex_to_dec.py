@@ -41,15 +41,15 @@ def hex_to_dec(hexNum: str):
 
 # Place test cases here
 testInputsAndExpectedResults = [
-    ('A2', 162)
-    ,('spam spam spam', None)
-    ,('A', 10)
-    ,('0', 0)
-    ,('1B', 27)
-    ,('AFC', 2812)
-    ,('SC0', None)
-    ,('A6G', None)
-    ,('ZZT0P', None)
+    ('A2', 162),
+    ('spam spam spam', None),
+    ('A', 10),
+    ('0', 0),
+    ('1B', 27),
+    ('AFC', 2812),
+    ('SC0', None),
+    ('A6G', None),
+    ('ZZT0P', None),
 ]
 
 # Test

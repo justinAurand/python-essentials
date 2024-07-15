@@ -17,13 +17,13 @@ def factorial(num):
 
 # Place test cases here
 testInputsAndExpectedResults = [
-    (5, 120)
-    ,(5, 120)
-    ,(6, 720)
-    ,(0, 1)
-    ,(-2, None)
-    ,(1.2, None)
-    ,('spam spam spam', None)
+    (5, 120),
+    (5, 120),
+    (6, 720),
+    (0, 1),
+    (-2, None),
+    (1.2, None),
+    ('spam spam spam', None),
 ]
 
 # Test
