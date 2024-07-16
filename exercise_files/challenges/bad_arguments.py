@@ -6,7 +6,7 @@ def handleNonIntArguments(func):
     def wrapper(*args):
         for arg in args:
             if type(arg) != int:
-                raise NonIntArgumentException
+                raise NonIntArgumentException()
         return func(*args)
     return wrapper
 
